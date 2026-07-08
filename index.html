@@ -86,6 +86,7 @@
     background:
       linear-gradient(100deg, rgba(22,40,60,.88) 0%, rgba(22,40,60,.65) 45%, rgba(22,40,60,.35) 100%),
       url('https://www.dicasahhigsolutions.com/wp-content/uploads/2025/07/ANTES-E-DEPOIS-DA-LIMPEZA-HIGIENIZACAO-E-IMPERMEABILIZACAO-DE-ESTOFADOS-3.jpg') center 35%/cover;
+    cursor:pointer;
   }
   .hero-inner{max-width:640px;padding:100px 32px 90px;}
   .hero .eyebrow{color:var(--dourado-suave);}
@@ -224,7 +225,7 @@
   </div>
 </nav>
 
-<header class="hero">
+<header class="hero" id="hero-clicavel">
   <div class="hero-inner">
     <span class="eyebrow">Higienização &amp; Impermeabilização de Estofados</span>
     <h1>O cuidado que sua casa e sua família merecem</h1>
@@ -430,6 +431,13 @@
 </footer>
 
 <a class="wa-float" href="https://api.whatsapp.com/send?phone=5511989180310&text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">☎</a>
+
+<script>
+  document.getElementById('hero-clicavel').addEventListener('click', function(e){
+    if (e.target.closest('a')) return;
+    window.open('https://api.whatsapp.com/send?phone=5511989180310&text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20agendar%20uma%20avalia%C3%A7%C3%A3o.', '_blank', 'noopener');
+  });
+</script>
 
 </body>
 </html>
